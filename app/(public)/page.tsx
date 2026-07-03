@@ -17,11 +17,11 @@ export default function HomePage() {
       <div className="md:hidden">
         <QuickBookingBar />
       </div>
+      <AboutPreview />
       <ExperienceSection />
       <PackagesPreview />
       <PoolHighlight />
       <GalleryPreview />
-      <AboutPreview />
       <ReviewsSection />
       <LocationSection />
       <FAQSection />
