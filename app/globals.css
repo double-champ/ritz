@@ -55,6 +55,17 @@
   
   --font-serif: var(--font-playfair), serif;
   --font-sans: var(--font-inter), sans-serif;
+
+  --animate-zoom-slow: zoom-slow 25s ease-in-out infinite;
+
+  @keyframes zoom-slow {
+    0%, 100% {
+      transform: scale(1.02);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
 }
 
 body {

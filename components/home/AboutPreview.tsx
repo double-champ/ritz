@@ -29,7 +29,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group"
+              className="relative aspect-[4/3] lg:aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group"
             >
               <Image
                 src="/images/lobby.png"

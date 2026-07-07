@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, CalendarDays } from "lucide-react";
 import { getWhatsAppLink, getPhoneDialLink } from "@/lib/whatsapp";
 
@@ -14,12 +15,15 @@ export default function FinalCTA() {
   return (
     <section className="relative py-24 md:py-32 bg-charcoal text-beige overflow-hidden">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 scale-102"
-        style={{
-          backgroundImage: `url('/images/pool-hills.png')`,
-        }}
-      />
+      <div className="absolute inset-0 opacity-40 scale-102 overflow-hidden">
+        <Image
+          src="/images/pool-hills.png"
+          alt="Ritz Nature Villa Pool & Hills"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/50" />

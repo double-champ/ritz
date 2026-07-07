@@ -112,7 +112,7 @@ export default function GalleryPage() {
               initial={{ scale: 0.95 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.95 }}
-              className="relative max-w-5xl max-h-[75vh] w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-2xl border border-white/15"
+              className="relative max-w-5xl w-full h-[70vh] max-h-[70vh] overflow-hidden rounded-2xl border border-white/15"
               onClick={(e) => e.stopPropagation()}
             >
               <Image

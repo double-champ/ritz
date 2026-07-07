@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Star, Calendar, Sparkles, Compass } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import QuickBookingBar from "./QuickBookingBar";
 
@@ -10,15 +11,18 @@ export default function HeroSection() {
   const whatsappLink = getWhatsAppLink("Hello Ritz Nature Villa, I would like to inquire about booking a stay or package. Please send me details.");
 
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-charcoal">
+    <section className="relative min-h-dvh md:h-dvh w-full flex items-center justify-center overflow-hidden bg-charcoal py-16 md:py-0">
       {/* Background Image with optimized layout */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 animate-pulse-slow"
-        style={{
-          backgroundImage: `url('/images/exterior.png')`,
-          animationDuration: '10s'
-        }}
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/exterior.png"
+          alt="Ritz Nature Villa Exterior"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center animate-zoom-slow"
+        />
+      </div>
 
       {/* Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-black/70" />

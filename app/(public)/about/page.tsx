@@ -46,7 +46,7 @@ export default function AboutPage() {
         {/* Narrative & Visual Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
           {/* Visual Column */}
-          <div className="lg:col-span-5 relative aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group">
+          <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group">
             <Image
               src="/images/exterior.png"
               alt="Nature Retreat"

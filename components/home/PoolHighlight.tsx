@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Waves } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PoolHighlight() {
   const whatsappLink = getWhatsAppLink(
@@ -91,9 +92,12 @@ export default function PoolHighlight() {
               className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-[4/3] group"
             >
               {/* Pool image */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" 
-                style={{ backgroundImage: `url('/images/pool-forest.png')` }}
+              <Image
+                src="/images/pool-forest.png"
+                alt="Hill Country Infinity Pool"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
 
