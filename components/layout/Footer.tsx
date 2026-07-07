@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-6">
           {/* Brand Info */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center bg-forest/20">
                 <Compass className="w-4.5 h-4.5 text-gold" />
@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col gap-4">
             <h4 className="font-serif text-white font-semibold text-base tracking-wider uppercase border-b border-white/5 pb-2">
-              Quick Links
+              Explore
             </h4>
             <nav className="flex flex-col gap-2.5 text-sm">
               <Link href="/" className="text-beige/60 hover:text-gold transition-colors">
@@ -94,7 +94,16 @@ export default function Footer() {
               <Link href="/contact" className="text-beige/60 hover:text-gold transition-colors">
                 Contact Us
               </Link>
-              <Link href="/policies/privacy" className="text-beige/60 hover:text-gold transition-colors border-t border-white/5 pt-1.5 mt-0.5">
+            </nav>
+          </div>
+
+          {/* Policies */}
+          <div className="flex flex-col gap-4">
+            <h4 className="font-serif text-white font-semibold text-base tracking-wider uppercase border-b border-white/5 pb-2">
+              Policies
+            </h4>
+            <nav className="flex flex-col gap-2.5 text-sm">
+              <Link href="/policies/privacy" className="text-beige/60 hover:text-gold transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/policies/booking" className="text-beige/60 hover:text-gold transition-colors">
