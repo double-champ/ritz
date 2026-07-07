@@ -32,7 +32,7 @@ export default function AboutPreview() {
               className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group"
             >
               <Image
-                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"
+                src="/images/lobby.png"
                 alt="Ritz Nature Villa Nature Surrounding"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"

@@ -93,7 +93,7 @@ export default function PoolHighlight() {
               {/* Pool image */}
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" 
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=80')` }}
+                style={{ backgroundImage: `url('/images/pool-forest.png')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
 

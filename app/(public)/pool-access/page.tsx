@@ -112,7 +112,7 @@ export default function PoolAccessPage() {
           {/* Right Image Column */}
           <div className="lg:col-span-6 relative aspect-[16/10] sm:aspect-[4/3] rounded-3xl overflow-hidden border border-forest/10 shadow-lg group">
             <Image
-              src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=80"
+              src="/images/pool-hills.png"
               alt="Pool Day Outing Infinity Pool"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

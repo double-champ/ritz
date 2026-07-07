@@ -41,7 +41,7 @@ export default function LoginPage() {
     <div 
       className="min-h-screen bg-charcoal-bg flex items-center justify-center p-4 font-sans relative overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(18, 18, 18, 0.92), rgba(18, 18, 18, 0.98)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80')`,
+        backgroundImage: `linear-gradient(to bottom, rgba(18, 18, 18, 0.92), rgba(18, 18, 18, 0.98)), url('/images/pool-forest.png')`,
       }}
     >
       {/* Glow accent */}

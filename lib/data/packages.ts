@@ -59,7 +59,7 @@ export const packages: Package[] = [
      * Category: Pool
      * Recommended File: /images/pool/pool-infinity.jpg
      */
-    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
+    image: "/images/pool-forest.png",
     duration: "Day Pass (8:00 AM - 6:00 PM)",
     included: [
       "Infinity pool access",
@@ -97,7 +97,7 @@ export const packages: Package[] = [
      * Category: Day outings
      * Recommended File: /images/outings/group-outing.jpg
      */
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+    image: "/images/dining.png",
     duration: "Full Day (9:00 AM - 5:00 PM)",
     included: [
       "Welcome drink on arrival",
@@ -135,7 +135,7 @@ export const packages: Package[] = [
      * Category: Rooms
      * Recommended File: /images/rooms/couple-deluxe.jpg
      */
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+    image: "/images/bedroom.png",
     duration: "Overnight Stay (Check-in 2:00 PM, Check-out 11:00 AM)",
     included: [
       "Luxury double bedroom with king bed",
@@ -174,7 +174,7 @@ export const packages: Package[] = [
      * Category: Villa exterior
      * Recommended File: /images/exterior/full-villa.jpg
      */
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+    image: "/images/exterior.png",
     duration: "Overnight Stay (Check-in 2:00 PM, Check-out 11:00 AM)",
     included: [
       "Exclusive full use of the Ritz Nature Villa",
@@ -212,7 +212,7 @@ export const packages: Package[] = [
      * Category: Nature
      * Recommended File: /images/nature/forest-retreat.jpg
      */
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    image: "/images/pool-hills.png",
     duration: "Overnight Stay (Flexible check-in options)",
     included: [
       "Forest-facing bedroom with garden view",
@@ -249,7 +249,7 @@ export const packages: Package[] = [
      * Category: Birthday setups
      * Recommended File: /images/birthdays/birthday-pool.jpg
      */
-    image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/pool-ladder.png",
     duration: "Event Booking (6 Hours limit, Day or Night)",
     included: [
       "Exclusive poolside event space access",

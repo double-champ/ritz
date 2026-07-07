@@ -198,7 +198,7 @@ Please send availability and details.`;
             <div className="relative h-32 w-full overflow-hidden rounded-xl bg-beige/30">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80"
+                src="/images/bedroom.png"
                 alt="Luxury Room Stay"
                 className="w-full h-full object-cover"
               />

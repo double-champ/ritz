@@ -48,7 +48,7 @@ export default function AboutPage() {
           {/* Visual Column */}
           <div className="lg:col-span-5 relative aspect-[3/4] rounded-3xl overflow-hidden border border-forest/10 shadow-xl group">
             <Image
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+              src="/images/exterior.png"
               alt="Nature Retreat"
               fill
               sizes="(max-width: 768px) 100vw, 40vw"

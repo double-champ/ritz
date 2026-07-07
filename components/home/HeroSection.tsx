@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 animate-pulse-slow"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url('/images/exterior.png')`,
           animationDuration: '10s'
         }}
       />

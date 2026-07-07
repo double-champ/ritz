@@ -17,7 +17,7 @@ export default function FinalCTA() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 scale-102"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url('/images/pool-hills.png')`,
         }}
       />
 
