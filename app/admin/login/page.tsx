@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Compass, Lock, User, Eye, EyeOff, AlertCircle } from "lucide-react";
+import Image from "next/image";
+import { Lock, User, Eye, EyeOff, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function LoginPage() {
@@ -55,8 +56,15 @@ export default function LoginPage() {
       >
         {/* Brand/Logo Header */}
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center bg-forest/20 mb-3 animate-float">
-            <Compass className="w-6 h-6 text-gold" />
+          <div className="relative w-12 h-12 rounded-full overflow-hidden border border-gold/40 flex items-center justify-center bg-forest/20 mb-3 animate-float">
+            <Image
+              src="/images/logo.jpg"
+              alt="Ritz Nature Villa Logo"
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
           </div>
           <h1 className="font-serif font-bold text-2xl text-white">Ritz Nature Villa</h1>
           <span className="text-[10px] uppercase tracking-widest text-gold font-semibold mt-1">

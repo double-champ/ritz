@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
-  Compass,
   FolderHeart,
   BedDouble,
   Image as ImageIcon,
@@ -33,8 +33,14 @@ export default function AdminSidebar() {
     <aside className="w-64 bg-charcoal text-beige flex flex-col border-r border-gold/15 h-screen sticky top-0 font-sans">
       {/* Sidebar Header */}
       <div className="p-6 border-b border-white/5 flex items-center gap-2.5">
-        <div className="w-8 h-8 rounded-full border border-gold/40 flex items-center justify-center bg-forest/20">
-          <Compass className="w-4 h-4 text-gold" />
+        <div className="relative w-8 h-8 rounded-full overflow-hidden border border-gold/40 flex items-center justify-center bg-forest/20">
+          <Image
+            src="/images/logo.jpg"
+            alt="Ritz Nature Villa Logo"
+            fill
+            sizes="32px"
+            className="object-cover"
+          />
         </div>
         <div className="flex flex-col">
           <span className="font-serif font-bold text-sm tracking-wide text-white leading-none">

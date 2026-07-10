@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, CalendarDays, Compass } from "lucide-react";
+import { Menu, X, CalendarDays } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -54,8 +55,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo / Brand Name */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center bg-forest/20 backdrop-blur-sm group-hover:border-gold transition-all duration-300">
-              <Compass className="w-5 h-5 text-gold group-hover:rotate-45 transition-transform duration-500" />
+            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gold/40 flex items-center justify-center bg-forest/20 backdrop-blur-sm group-hover:border-gold transition-all duration-300">
+              <Image
+                src="/images/logo.jpg"
+                alt="Ritz Nature Villa Logo"
+                fill
+                sizes="40px"
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg md:text-xl tracking-wider text-beige group-hover:text-white transition-colors">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Compass, Phone, Mail, MapPin, Clock, Facebook, Instagram, ShieldAlert } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, ShieldAlert } from "lucide-react";
 import { getWhatsAppLink, getPhoneDialLink, getGoogleMapsLink } from "@/lib/whatsapp";
 
 export default function Footer() {
@@ -18,8 +19,14 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="flex flex-col gap-4 sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center bg-forest/20">
-                <Compass className="w-4.5 h-4.5 text-gold" />
+              <div className="relative w-9 h-9 rounded-full overflow-hidden border border-gold/40 flex items-center justify-center bg-forest/20">
+                <Image
+                  src="/images/logo.jpg"
+                  alt="Ritz Nature Villa Logo"
+                  fill
+                  sizes="36px"
+                  className="object-cover"
+                />
               </div>
               <span className="font-serif font-bold text-lg tracking-wider text-white">
                 RITZ NATURE VILLA
